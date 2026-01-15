@@ -71,14 +71,37 @@ function App() {
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="container mx-auto p-4">
-        <div className="py-20 text-center">
-          <h1 className="text-4xl font-bold md:text-6xl">Welcome to FlowState</h1>
-          <p className="text-muted-foreground mt-4 text-lg md:text-xl">
-            Start building your app with a beautiful responsive header
-          </p>
-        </div>
+      {/* Hero Section */}
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24">
+          <div className="mx-auto max-w-4xl text-center">
+            {/* Main Headline */}
+            <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              Master Asynchronous
+              <br />
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                Workflows
+              </span>{' '}
+              with Ease
+            </h1>
+
+            {/* Supporting Subheadline */}
+            <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl lg:mt-8">
+              Streamline your team's productivity with intelligent task orchestration.
+              Build, automate, and scale workflows that adapt to your needs.
+            </p>
+
+            {/* CTA Button */}
+            <div className="mt-8 lg:mt-10">
+              <Button
+                size="lg"
+                className="hero-cta-button bg-[#007BFF] px-8 py-6 text-base font-semibold text-white transition-all hover:bg-[#0056b3] sm:text-lg"
+              >
+                Get Started for Free
+              </Button>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Toaster position="bottom-right" />

@@ -121,3 +121,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .hero-cta-button {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4), 0 0 40px rgba(0, 123, 255, 0.2);
+  }
+  .hero-cta-button:hover {
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.6), 0 0 60px rgba(0, 123, 255, 0.3);
+  }
+}
