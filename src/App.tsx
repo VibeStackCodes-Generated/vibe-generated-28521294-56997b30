@@ -8,6 +8,7 @@ import { LogoCarousel } from '@/components/LogoCarousel'
 import { FeaturesGrid } from '@/components/FeaturesGrid'
 import { Timeline } from '@/components/Timeline'
 import { TestimonialsMarquee } from '@/components/TestimonialsMarquee'
+import { CtaFooter } from '@/components/CtaFooter'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -122,6 +123,9 @@ function App() {
 
         {/* Testimonials Marquee Section */}
         <TestimonialsMarquee />
+
+        {/* CTA Footer Section */}
+        <CtaFooter />
       </main>
 
       <Toaster position="bottom-right" />
