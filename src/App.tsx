@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
 import { useState } from 'react'
+import { FloatingDashboard } from '@/components/FloatingDashboard'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -100,6 +101,9 @@ function App() {
                 Get Started for Free
               </Button>
             </div>
+
+            {/* Floating Dashboard Mockup */}
+            <FloatingDashboard />
           </div>
         </section>
       </main>

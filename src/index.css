@@ -129,4 +129,84 @@
   .hero-cta-button:hover {
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.6), 0 0 60px rgba(0, 123, 255, 0.3);
   }
+
+  /* Floating Dashboard Animations */
+  .floating-dashboard-container {
+    perspective: 1500px;
+  }
+
+  .dashboard-mockup {
+    animation: float 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform: rotateX(8deg) rotateY(-5deg);
+  }
+
+  .floating-card-1 {
+    animation: float-alt 5s ease-in-out infinite;
+    transform-style: preserve-3d;
+    animation-delay: 0.5s;
+  }
+
+  .floating-card-2 {
+    animation: float-alt 5.5s ease-in-out infinite;
+    transform-style: preserve-3d;
+    animation-delay: 1s;
+  }
+
+  .stat-card {
+    transition: all 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .chart-bar > div {
+    animation: bar-grow 1.5s ease-out forwards;
+    transform-origin: bottom;
+  }
+
+  .glow-effect {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: rotateX(8deg) rotateY(-5deg) translateY(0px);
+    }
+    50% {
+      transform: rotateX(8deg) rotateY(-5deg) translateY(-20px);
+    }
+  }
+
+  @keyframes float-alt {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px) rotateZ(0deg);
+    }
+    50% {
+      transform: translateY(-15px) translateX(5px) rotateZ(2deg);
+    }
+  }
+
+  @keyframes bar-grow {
+    from {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
 }
