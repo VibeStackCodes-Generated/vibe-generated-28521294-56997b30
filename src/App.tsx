@@ -5,6 +5,7 @@ import { Menu } from 'lucide-react'
 import { useState } from 'react'
 import { FloatingDashboard } from '@/components/FloatingDashboard'
 import { LogoCarousel } from '@/components/LogoCarousel'
+import { FeaturesGrid } from '@/components/FeaturesGrid'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -110,6 +111,9 @@ function App() {
 
         {/* Logo Carousel Section */}
         <LogoCarousel />
+
+        {/* Features Grid Section */}
+        <FeaturesGrid />
       </main>
 
       <Toaster position="bottom-right" />
