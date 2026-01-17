@@ -9,6 +9,7 @@ import { FeaturesGrid } from '@/components/FeaturesGrid'
 import { Timeline } from '@/components/Timeline'
 import { TestimonialsMarquee } from '@/components/TestimonialsMarquee'
 import { CtaFooter } from '@/components/CtaFooter'
+import { VibeStackBadge } from '@/components/vibestack-badge'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -129,6 +130,7 @@ function App() {
       </main>
 
       <Toaster position="bottom-right" />
+      <VibeStackBadge />
     </div>
   )
 }
